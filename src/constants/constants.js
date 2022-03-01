@@ -25,7 +25,7 @@ export const projects = [
   },
   {
     title: 'Shoe Inv3ntory',
-    description: "This was the beginning of an online inventory for my previous shoe collection. Features rotating shoe boxes and a profit calculator.",
+    description: "This was the beginning of an online inventory tracker for my previous shoe collection. Features rotating shoe boxes and a profit calculator.",
     image: '/images/4.png',
     tags: ['JavaScript', 'HTML', 'CSS'],
     visit: 'https://github.com/ncrawford22/thesho3invntory',
