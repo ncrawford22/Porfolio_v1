@@ -29,7 +29,7 @@ export const BlogCard = styled.div`
   text-align: center;
   width: 400px;
   height: 450px;
-  z-index: 9999;
+  z-index: 5999;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
