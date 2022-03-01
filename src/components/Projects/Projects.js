@@ -32,7 +32,7 @@ class Projects extends React.Component {
         <SectionTitle main>Projects</SectionTitle>
         <div class= "boxed">
         <GridContainer>
-          {projects.map(({id, image, title, description, tags, source, visit}) => (
+          {projects.map(({id, image, title, description, tags, visit}) => (
             
             <ReactCardFlip isFlipped={this.state.isFlipped.has(id)} flipDirection="horizontal">
             <BlogCard  key={id} onClick={this.handleClick(id)}>
@@ -42,20 +42,20 @@ class Projects extends React.Component {
             </BlogCard>
             <BlogCard>
                 {/* BACK */}
-                <TitleContent>
+                <TitleContent key={id} onClick={this.handleClick(id)}>
                   <HeaderThree title>{title}</HeaderThree>
                   <Hr />
                 </TitleContent>
-                <CardInfo  key={id} onClick={this.handleClick(id)}>{description}</CardInfo>
-                <div>
-                <TitleContent></TitleContent>
-                <TagList>
+                <CardInfo key={id} onClick={this.handleClick(id)}>{description}</CardInfo>
+                <div key={id} onClick={this.handleClick(id)}>
+                <TitleContent key={id} onClick={this.handleClick(id)}></TitleContent>
+                <TagList key={id} onClick={this.handleClick(id)}>
                   {tags.map((tag, i) => (
                     <Tag key={i}>{tag}</Tag>
                   ))}
                 </TagList>
                 </div>
-                  <UtilityList>
+                <UtilityList>
                     <ExternalLinks href={visit}>Code</ExternalLinks>
                   </UtilityList>
             </BlogCard>
