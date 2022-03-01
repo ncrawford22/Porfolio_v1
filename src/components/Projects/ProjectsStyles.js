@@ -88,6 +88,7 @@ export const UtilityList = styled.ul`
   padding: 0;
   display: flex;
   justify-content: space-around;
+  z-index: 9999;
   margin: 2.5rem 0;
 `;
 
