@@ -40,13 +40,13 @@ class Projects extends React.Component {
                 <Img src={image}/>
                 {/* FRONT*/}
             </BlogCard>
-            <BlogCard  key={id} onClick={this.handleClick(id)}>
+            <BlogCard>
                 {/* BACK */}
                 <TitleContent>
                   <HeaderThree title>{title}</HeaderThree>
                   <Hr />
                 </TitleContent>
-                <CardInfo>{description}</CardInfo>
+                <CardInfo  key={id} onClick={this.handleClick(id)}>{description}</CardInfo>
                 <div>
                 <TitleContent></TitleContent>
                 <TagList>
