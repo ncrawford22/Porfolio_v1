@@ -8,6 +8,10 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <LinkList>
+      <LinkColumn>
+          <LinkTitle>Resume</LinkTitle>
+          <LinkItem href="https://drive.google.com/file/d/1tK2lfiP_mQtK__ygBWxy-Y0s3RdTM4MY/view?usp=sharing">View My Resume</LinkItem>
+        </LinkColumn>
         <LinkColumn>
           <LinkTitle>Phone</LinkTitle>
           <LinkItem href="tel:681-207-6001">681-207-6001</LinkItem>
